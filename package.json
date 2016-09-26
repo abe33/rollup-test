@@ -4,7 +4,7 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c && babel lib/index.js"
   },
   "author": "Cédric Néhémie <cedric.nehemie@gmail.com>",
   "license": "MIT",
@@ -20,10 +20,7 @@
   },
   "babel": {
     "presets": [
-      "es2015",
-      {
-        "modules": false
-      }
+      "es2015"
     ]
   }
 }

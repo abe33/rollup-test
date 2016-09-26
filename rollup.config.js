@@ -5,8 +5,7 @@ export default {
   entry: 'src/index.es6',
   dest: 'lib/index.js',
   plugins: [
-    nodeResolve({jsnext: true, main: false}),
-    babel({babelrc: false})
+    nodeResolve({jsnext: true, main: false})
   ],
   format: 'iife'
 }
